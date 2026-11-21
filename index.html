@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rey Company</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+</head>
+<body class="bg-gradient-to-br from-green-50 via-amber-50 to-pink-50 text-gray-800 font-sans text-base scroll-smooth">
+
+  <!-- Wrapper -->
+  <div class="max-w-screen-lg mx-auto shadow-lg border border-gray-300 mt-4">
+
+    <!-- Fake Browser Bar -->
+    <div class="flex items-center border-b border-gray-300 px-4 py-2 bg-gray-100">
+      <div class="flex space-x-2">
+        <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+        <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+        <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+      </div>
+      <div class="ml-4 font-semibold">Profil Perusahaan</div>
+      <div class="ml-auto flex items-center space-x-2 text-sm text-gray-600">
+        <i class="fas fa-lock"></i>
+        <span>www.mywebsite.com</span>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex justify-center gap-4 py-4 bg-white sticky top-0 z-10 border-b border-gray-200">
+      <a href="#home" class="px-4 py-2 border border-blue-400 rounded hover:bg-blue-50 text-blue-600">Beranda</a>
+      <a href="#profile" class="px-4 py-2 border border-purple-400 rounded hover:bg-purple-50 text-purple-600">Profil Kami</a>
+      <a href="#portfolio" class="px-4 py-2 border border-green-400 rounded hover:bg-green-50 text-green-600">Portofolio</a>
+      <a href="#message" class="px-4 py-2 border border-pink-400 rounded hover:bg-pink-50 text-pink-600">Hubungi Kami</a>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="px-6 py-10 text-center">
+      <h1 class="text-2xl font-bold mb-2">Halo <span id="welcomeName">Pengunjung</span>, Selamat Datang di Website Kami!</h1>
+      <p class="text-lg text-gray-600">Halo, saya Raihan Rizki Wijaya, seorang IT Consultant yang berfokus pada pengembangan perangkat lunak berbasis Machine Learning dan Artificial Intelligence.</p>
+     <p class="text-lg text-gray-600">Saya percaya bahwa teknologi seharusnya tidak hanya canggih, tapi juga solutif dan berorientasi pada dampak nyata. Portofolio ini adalah cerminan perjalanan profesional saya—mulai dari ide awal yang sederhana hingga implementasi sistem cerdas yang kompleks. 
+        Setiap proyek adalah kesempatan untuk belajar, berinovasi, dan mendorong batas kemampuan teknologi. Website ini dibangun menggunakan JavaScript, HTML, dan CSS sebagai fondasi utama. sebagai wujud pendekatan teknis yang sederhana namun fungsional. Mari menjelajah, dan jika visi kita sejalan, saya terbuka untuk kolaborasi.</p>
+    </section>
+
+    <!-- Profile -->
+    <section id="profile" class="bg-gradient-to-b from-blue-50 to-purple-50 py-10 px-6">
+      <h2 class="text-xl font-bold mb-4 text-center">Profil Kami</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+           <img src="C:\rey\codingcamp-14-jul-25-raihanrizki-main\asset\logo.jpg" alt="Company Banner" class="mb-2 w-full rounded" /> 
+        </div>
+        <div class="space-y-4">
+          <p><b>Tentang Kami:</b> Kami adalah perusahaan yang bergerak di bidang pengembangan perangkat lunak berbasis Artificial Intelligence dan Machine Learning. Kami fokus menghadirkan solusi digital cerdas yang efisien, adaptif, dan berbasis data. Dengan tim profesional dan pendekatan teknologi mutakhir, kami membantu bisnis bertransformasi melalui inovasi yang nyata.</p>
+          <p><b>Visi:</b> Mendorong kemajuan teknologi di Asia Tenggara melalui solusi AI dan perangkat lunak yang berdampak, cerdas, dan berkelanjutan.</p>
+          <p><b>Misi:</b> Kami berkomitmen untuk menghadirkan solusi perangkat lunak dan AI yang cerdas, berdampak, dan berkelanjutan bagi berbagai sektor industri. Melalui inovasi yang relevan, layanan konsultasi strategis, serta penguatan ekosistem digital lokal, kami berupaya mempercepat transformasi teknologi di Asia Tenggara dengan pendekatan yang inklusif dan bertanggung jawab.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-10 px-6">
+      <h2 class="text-xl font-bold mb-4 text-center">Portofolio Kami</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <img src="C:\rey\codingcamp-14-jul-25-raihanrizki-main\asset\ai.jpg" alt="Mobile project" class="mb-2 w-full rounded" />
+        <img src="C:\rey\codingcamp-14-jul-25-raihanrizki-main\asset\ml2.jpg" alt="mobile Projects" class="mb-2 w-full rounded" />
+        <img src="asset/it consultant.jpg" alt="Tech Consultanct" class="mb-2 w-full rounded" />
+      </div>
+    </section>
+
+    <!-- Message Us -->
+    <section id="message" class="bg-gradient-to-b from-amber-50 to-orange-50 py-10 px-6">
+      <h2 class="text-xl font-bold mb-4 text-center">Hubungi Kami</h2>
+      <div class="flex flex-col md:flex-row gap-6">
+        <form id="messageForm" class="flex flex-col gap-3 md:w-1/2">
+          <label>
+            Nama:
+            <input type="text" name="name" required class="w-full border px-3 py-2 rounded" />
+          </label>
+          <label>
+            Tanggal Lahir:
+            <input type="date" name="birthdate" required class="w-full border px-3 py-2 rounded" />
+          </label>
+          <label>Jenis Kelamin:</label>
+          <div class="flex gap-4 text-sm">
+            <label><input type="radio" name="gender" value="Laki-Laki" /> Laki-Laki</label>
+            <label><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+          </div>
+          <label>
+            Pesan:
+            <textarea name="message" rows="4" required class="w-full border px-3 py-2 rounded"></textarea>
+          </label>
+          <button type="submit" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white py-2 rounded shadow-md">
+            Kirim
+          </button>
+        </form>
+
+        <div id="infoBox" class="border p-4 rounded md:w-1/2 bg-white text-sm leading-relaxed">
+          <div class="mb-2 font-bold">Waktu saat ini:</div>
+          <div id="currentTime" class="mb-4">Memuat...</div>
+          <div>
+            <b>Nama:</b> - <br />
+            <b>Tanggal Lahir:</b> - <br />
+            <b>Jenis Kelamin:</b> - <br />
+            <b>Pesan:</b> -
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-xs text-center py-3 border-t border-gray-200">
+      &copy; 2025 Proyek Mini RevoU | Dibuat oleh rey's
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
